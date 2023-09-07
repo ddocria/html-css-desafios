@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url(font/IDroid.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1:#84E1AD;
+    --cor2: #1A5C38;
+    --cor3: #39CC7A;
+    --fonteandroid: 'Android';
+    --fontecursive: 'cursive';
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+    min-height: 180px;
+    width: 100%;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fontecursive);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+header > p {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.315);
+    
+    font-size: 1em;
+    font-weight: normal;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--cor2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: #39CC7A;
+    color: var(--cor2);
+    border-radius: 5px;
+    transition-duration: 0.6s;
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+    max-width: 850px;
+    min-width: 320px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+main  div.video {
+    background-color: var(--cor2);
+    padding: 20px;
+    
+}
+
+div {
+    display: block;
+}
+
+article {
+    max-width: 1000px;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px;
+    margin: 0px;
+}
+
+main > article > h2 {
+    font-family: var(--fonteandroid);
+    color: var(--cor2);
+    padding-top: 8px;
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+main > article > p {
+    text-align: justify;
+    text-indent: 30px;
+    padding: 10px;
+}
+main > article > aside {
+    background-color: #C5EBD6;
+}
+article > aside > ul {
+    padding: 20px;
+}
